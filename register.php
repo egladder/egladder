@@ -5,7 +5,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css"></head>
-</head>
 <body>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<form name="form" method="post" action="register_finish.php">
@@ -16,6 +15,21 @@
 	地址：<input type="text" name="address" /> <br>
 	備註：<textarea name="other" cols="45" rows="5"></textarea> <br>
 	<input type="submit" name="button" value="確定" />
+	</form>
+
+	<form class="pure-form">
+    <fieldset class="pure-group">
+        <input type="text" class="pure-input-1-2" placeholder="Username">
+        <input type="text" class="pure-input-1-2" placeholder="Password">
+        <input type="email" class="pure-input-1-2" placeholder="Email">
+    </fieldset>
+
+    <fieldset class="pure-group">
+        <input type="text" class="pure-input-1-2" placeholder="Another Group">
+        <input type="text" class="pure-input-1-2" placeholder="More Stuff">
+    </fieldset>
+
+    <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Sign in</button>
 	</form>
 </body>
 </html>

@@ -4,14 +4,18 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css"></head>
 </head>
 <body>
-	<form name="form" method="post" action="connection.php">
-	帳號：<input type="text" name="id" /> <br>
-	密碼：<input type="password" name="pw" /> <br>
-	<input type="submit" name="button" value="登入" />
-	<a href="register.php">申請帳號</a>
+	<form class="pure-form" name="form" method="post" action="connection.php">
+	    <fieldset class="pure-group">
+	        <input type="text" class="pure-input-1-2" placeholder="Username">
+	        <input type="text" class="pure-input-1-2" placeholder="Password">
+	        <input type="email" class="pure-input-1-2" placeholder="Email">
+	    </fieldset>
+	    <button type="submit" name="button" class="pure-button pure-input-1-2 pure-button-primary">Sign in</button>
+	    <a href="register.php">Sign up</a>
+	</form>
 </form>
 </body>
 </html>
