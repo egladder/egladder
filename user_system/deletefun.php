@@ -17,6 +17,7 @@
         //echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
     } else {
         echo '刪除失敗!';
+        echo 'upload!success!'
         echo 'error:<p>' . mysql_error() . '</p>';
         //echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
     }
