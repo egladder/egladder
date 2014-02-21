@@ -20,13 +20,13 @@
     //確認密碼輸入的正確性
     if ($id != null && $pw != null) {
             //新增資料進資料庫語法
-            $sql = "insert into members (email, password) values ('$id', '$pw')";
+            $sql = "UPDATE members SET password = $pw WHERE email = '$id'";
 
             if (mysql_query($sql)) {
-                echo '新增成功!';
+                echo '修改成功!';
                 //echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
             } else {
-                echo '新增失敗!';
+                echo '修改失敗!';
                 echo 'error:<p>' . mysql_error() . '</p>';
                 //echo '<meta http-equiv=REFRESH CONTENT=2;url=index.php>';
             }
